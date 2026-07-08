@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex justify-center px-8">
+    <section className="min-h-screen flex flex-col justify-center items-start px-8">
       <h1 className="text-5xl font-bold">
         Jason Wong
       </h1>
@@ -10,10 +10,7 @@ export default function Hero() {
       </h2>
 
       <p className="mt-6 max-w-xl text-lg">
-        I build web applications and software solutions using
-        modern technologies like React, JavaScript, and Python.
-        I enjoy creating intuitive user experiences and solving
-        complex problems through code.
+        I specialize in building modern web applications with React and JavaScript. I also have experience developing custom WordPress solutions and creating responsive user experiences.
       </p>
 
       <div className="mt-8">
