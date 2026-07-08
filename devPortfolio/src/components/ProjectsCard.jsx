@@ -1,15 +1,15 @@
 const ProjectsCard = ({ title, description, image, link }) => {
   return (
-    <div className="rounded-xl border p-6 shadow-md">
-      {image && (
-        <div className="w-full h-80 overflow-hidden rounded-lg bg-gray-100">
-          <img
+    <div className="max-w-md rounded-xl border p-6 shadow-md">
+        {image && (
+        <div className="w-full flex items-center justify-center bg-gray-100 rounded-lg p-4">
+            <img
             src={image}
             alt={title}
-            className="w-full h-full object-contain"
-          />
+            className="max-w-xs max-h-40 object-contain"
+            />
         </div>
-      )}
+        )}
 
       <div className="mt-4">
         <h3 className="text-2xl font-bold">
@@ -25,7 +25,7 @@ const ProjectsCard = ({ title, description, image, link }) => {
             href={link}
             target="_blank"
             rel="noreferrer"
-            className="inline-block mt-4 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800"
+            className="inline-block mt-4 bg-black text-white px-4 py-2 rounded-lg"
           >
             View Project
           </a>
